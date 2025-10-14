@@ -12,6 +12,6 @@ This repository documents my journey of learning and exploring Spring Boot, show
 - <b>Spring Boot</b>
 - <b>Java</b>
 - <b>Maven</b>
-- <b>JPA/Hibernate</b>
+- <b>JPA</b>
 - <b>RESTful APIs</b>
 - <b>Spring Security</b>

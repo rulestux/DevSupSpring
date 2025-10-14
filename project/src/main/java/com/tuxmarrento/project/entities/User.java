@@ -3,9 +3,24 @@ package com.tuxmarrento.project.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+// 'annotation' referência JPA:
+@Entity
+/* '@Table' para não dar conflito com a palavra 'user'
+ * especial no banco de dados: */
+@Table(name = "tb_user")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
+	// indicação do ID ao JPA:
+	@Id
+	// indicação de chave auto-incrementável:
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private String phone;
